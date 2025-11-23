@@ -26,19 +26,19 @@ const config: ForgeConfig = {
         {
           // `entry` is just an alias for `build.lib.entry` in the corresponding file of `config`.
           entry: 'src/electron/main.ts',
-          config: 'vite/vite.main.config.ts',
+          config: 'vite/vite.main.config.mts',
           target: 'main',
         },
         {
           entry: 'src/electron/preload.ts',
-          config: 'vite/vite.preload.config.ts',
+          config: 'vite/vite.preload.config.mts',
           target: 'preload',
         },
       ],
       renderer: [
         {
           name: 'main_window',
-          config: 'vite/vite.renderer.config.ts',
+          config: 'vite/vite.renderer.config.mts',
         },
       ],
     }),
