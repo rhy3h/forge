@@ -13,5 +13,12 @@
     "plugin:import/typescript",
     "plugin:prettier/recommended"
   ],
-  "parser": "@typescript-eslint/parser"
+  "parser": "@typescript-eslint/parser",
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+        "project": "./tsconfig.json"
+      }
+    }
+  }
 }
